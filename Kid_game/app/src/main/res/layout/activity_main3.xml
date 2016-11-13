@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main3"
     android:layout_width="match_parent"
@@ -10,5 +11,72 @@
     android:paddingTop="0dp"
     tools:context="com.k63b.kid_game.Main3Activity"
     android:background="@drawable/bg">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back"
+        android:id="@+id/btn_back"
+        android:layout_marginRight="538dp"
+        android:layout_marginEnd="538dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="340dp"
+        android:onClick=""
+        android:layout_marginLeft="0dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/thong_bao"
+        android:id="@+id/noti"
+        android:paddingLeft="350dp"
+        android:layout_alignBottom="@+id/heart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cau_hoi"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="170dp"
+        android:layout_below="@+id/noti"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="500dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="500dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/heart"
+        android:id="@+id/heart"
+        android:paddingLeft="50dp"
+        android:paddingRight="0dp"
+        android:layout_marginBottom="336dp"
+        android:elevation="2dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="520dp"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:text="màn hình 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="216dp"
+        android:layout_marginStart="216dp"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
 
 </RelativeLayout>
