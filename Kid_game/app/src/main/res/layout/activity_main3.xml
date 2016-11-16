@@ -65,18 +65,5 @@
         android:layout_marginLeft="520dp"
         android:paddingTop="5dp" />
 
-    <TextView
-        android:text="màn hình 3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="216dp"
-        android:layout_marginStart="216dp"
-        android:id="@+id/textView"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="13dp"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem" />
-
 
 </RelativeLayout>
