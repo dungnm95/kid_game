@@ -16,16 +16,10 @@ public class MainActivity extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Random r = new Random();
-//                int n = r.nextInt(5);
-                int n = 2;
-                if(n%2 == 0){
-                    Intent screen_play = new Intent(MainActivity.this, Main2Activity.class);
-                    startActivity(screen_play);
-                }else{
-                    Intent screen_play = new Intent(MainActivity.this, Main3Activity.class);
-                    startActivity(screen_play);
-                }
+                Intent screen_play = new Intent(MainActivity.this, Main4Activity.class);
+                screen_play.putExtra("heart",0);
+                startActivity(screen_play);
+
             }
         });
     }
