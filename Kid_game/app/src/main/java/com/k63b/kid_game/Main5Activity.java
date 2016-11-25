@@ -28,8 +28,6 @@ public class Main5Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
-        Intent i = getIntent();
-
         back = (ImageView)findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,8 +43,8 @@ public class Main5Activity extends AppCompatActivity {
         noti_1 = (ImageView)findViewById(R.id.noti_1);
         noti_2 = (ImageView)findViewById(R.id.noti_2);
         cat = (ImageView)findViewById(R.id.cat);
+        Intent i = getIntent();
         heart = i.getIntExtra("heart", 0);
-        Log.i("", heart+"");
         changeHeart(heart);
         Random r = new Random();
         int n = r.nextInt(9); n++;
@@ -418,35 +416,6 @@ public class Main5Activity extends AppCompatActivity {
 
             if(heart < 10){
                 if (count == 1){
-                    noti_2.setImageResource(R.drawable.noti_1);
-                }
-                if (count == 2){
-                    noti_2.setImageResource(R.drawable.noti_2);
-                }
-                if (count == 3){
-                    noti_2.setImageResource(R.drawable.noti_3);
-                }
-                if (count == 4){
-                    noti_2.setImageResource(R.drawable.noti_4);
-                }
-                if (count == 5){
-                    noti_2.setImageResource(R.drawable.noti_5);
-                }
-                if (count == 6){
-                    noti_2.setImageResource(R.drawable.noti_6);
-                }
-                if (count == 7){
-                    noti_2.setImageResource(R.drawable.noti_7);
-                }
-                if (count == 8){
-                    noti_2.setImageResource(R.drawable.noti_8);
-                }
-                if (count == 9){
-                    noti_2.setImageResource(R.drawable.noti_9);
-                }
-            }
-            else {
-                if (count == 1){
                     noti_1.setImageResource(R.drawable.noti_1);
                 }
                 if (count == 2){
@@ -472,6 +441,35 @@ public class Main5Activity extends AppCompatActivity {
                 }
                 if (count == 9){
                     noti_1.setImageResource(R.drawable.noti_9);
+                }
+            }
+            else {
+                if (count == 1){
+                    noti_2.setImageResource(R.drawable.noti_1);
+                }
+                if (count == 2){
+                    noti_2.setImageResource(R.drawable.noti_2);
+                }
+                if (count == 3){
+                    noti_2.setImageResource(R.drawable.noti_3);
+                }
+                if (count == 4){
+                    noti_2.setImageResource(R.drawable.noti_4);
+                }
+                if (count == 5){
+                    noti_2.setImageResource(R.drawable.noti_5);
+                }
+                if (count == 6){
+                    noti_2.setImageResource(R.drawable.noti_6);
+                }
+                if (count == 7){
+                    noti_2.setImageResource(R.drawable.noti_7);
+                }
+                if (count == 8){
+                    noti_2.setImageResource(R.drawable.noti_8);
+                }
+                if (count == 9){
+                    noti_2.setImageResource(R.drawable.noti_9);
                 }
             }
             heart = heart / 10;

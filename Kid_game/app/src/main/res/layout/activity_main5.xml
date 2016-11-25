@@ -108,7 +108,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="@android:dimen/dialog_min_width_major"
-        app:srcCompat="@drawable/noti_0"
+        app:srcCompat="@drawable/dem_trong"
         android:layout_alignRight="@+id/noti"
         android:layout_alignEnd="@+id/noti"
         android:layout_marginRight="17dp"
@@ -119,11 +119,11 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="@android:dimen/dialog_min_width_major"
-        app:srcCompat="@drawable/noti_trong"
+        app:srcCompat="@drawable/noti_0"
         android:id="@+id/noti_1"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/noti_2"
-        android:layout_toStartOf="@+id/noti_2" />
+        android:layout_alignLeft="@+id/noti_2"
+        android:layout_alignStart="@+id/noti_2" />
 
 
 </RelativeLayout>
