@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent screen_play = new Intent(MainActivity.this, Main4Activity.class);
                 screen_play.putExtra("heart",0);
                 startActivity(screen_play);
-
+                finish();
             }
         });
     }

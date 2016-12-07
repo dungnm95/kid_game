@@ -26,6 +26,7 @@ public class Main3Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent screen_main = new Intent(Main3Activity.this,MainActivity.class);
                 startActivity(screen_main);
+                finish();
             }
         });
         ImageView choose_1 = (ImageView)findViewById(R.id.so_1);
@@ -48,13 +49,13 @@ public class Main3Activity extends AppCompatActivity {
         checkHeart(heart);
 
         Random r = new Random();
-        int n = r.nextInt(9); n++;
-        //int n = 1;
+        int n = r.nextInt(10)+1;
         question = (ImageView)findViewById(R.id.cau_hoi);
         switch (n){
             case 1:
                 Random r1 = new Random();
-                int n1 = r1.nextInt(9); n1++;
+                int n1 = r1.nextInt(10)+1;
+                //int n1=10;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -301,7 +302,8 @@ public class Main3Activity extends AppCompatActivity {
                 break;
             case 2:
                 r1 = new Random();
-                n1 = r1.nextInt(9); n1++;
+                n1 = r1.nextInt(10)+1;
+                //n1 = 9;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -548,7 +550,8 @@ public class Main3Activity extends AppCompatActivity {
                 break;
             case 3:
                 r1 = new Random();
-                n1 = r1.nextInt(9); n1++;
+                n1 = r1.nextInt(10)+1;
+                //n1=8;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -795,7 +798,8 @@ public class Main3Activity extends AppCompatActivity {
                 break;
             case 4:
                 r1 = new Random();
-                n1 = r1.nextInt(9); n1++;
+                n1 = r1.nextInt(10)+1;
+                //n1=10;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -955,7 +959,7 @@ public class Main3Activity extends AppCompatActivity {
                         count_1.setImageResource(R.drawable.dem_hoa);
                         count_2.setImageResource(R.drawable.dem_hoa);
                         count_3.setImageResource(R.drawable.dem_hoa);
-                        count_3.setImageResource(R.drawable.dem_hoa);
+                        count_4.setImageResource(R.drawable.dem_hoa);
                         count_5.setImageResource(R.drawable.dem_trong);
                         count_6.setImageResource(R.drawable.dem_trong);
                         count_7.setImageResource(R.drawable.dem_trong);
@@ -1042,7 +1046,8 @@ public class Main3Activity extends AppCompatActivity {
                 break;
             case 5:
                 r1 = new Random();
-                n1 = r1.nextInt(9); n1++;
+                n1 = r1.nextInt(10)+1;
+                //n1=10;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -1289,7 +1294,7 @@ public class Main3Activity extends AppCompatActivity {
                 break;
             case 6:
                 r1 = new Random();
-                n1 = r1.nextInt(9); n1++;
+                n1 = r1.nextInt(10)+1;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -1536,7 +1541,7 @@ public class Main3Activity extends AppCompatActivity {
                 break;
             case 7:
                 r1 = new Random();
-                n1 = r1.nextInt(9); n1++;
+                n1 = r1.nextInt(10)+1;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -1783,7 +1788,7 @@ public class Main3Activity extends AppCompatActivity {
                 break;
             case 8:
                 r1 = new Random();
-                n1 = r1.nextInt(9); n1++;
+                n1 = r1.nextInt(10)+1;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -2030,7 +2035,7 @@ public class Main3Activity extends AppCompatActivity {
                 break;
             case 9:
                 r1 = new Random();
-                n1 = r1.nextInt(9); n1++;
+                n1 = r1.nextInt(10)+1;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -2277,7 +2282,7 @@ public class Main3Activity extends AppCompatActivity {
                 break;
             case 10:
                 r1 = new Random();
-                n1 = r1.nextInt(9); n1++;
+                n1 = r1.nextInt(10)+1;
                 switch (n1){
                     case 1:
                         count_1.setImageResource(R.drawable.dem_dau);
@@ -2537,6 +2542,7 @@ public class Main3Activity extends AppCompatActivity {
                     Intent screen_play = new Intent(Main3Activity.this, Main3Activity.class);
                     screen_play.putExtra("heart", finalHeart);
                     startActivity(screen_play);
+                    finish();
                 }
             };
             Handler handler = new android.os.Handler();
@@ -2584,6 +2590,9 @@ public class Main3Activity extends AppCompatActivity {
                 }
             }
             else {
+                if (count == 0){
+                    heart_1.setImageResource(R.drawable.noti_0);
+                }
                 if (count == 1){
                     heart_1.setImageResource(R.drawable.noti_1);
                 }

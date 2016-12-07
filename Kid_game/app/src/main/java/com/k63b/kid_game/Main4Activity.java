@@ -31,6 +31,7 @@ public class Main4Activity extends AppCompatActivity {
                         Intent screen_play = new Intent(Main4Activity.this, Main5Activity.class);
                         screen_play.putExtra("heart",0);
                         startActivity(screen_play);
+                        finish();
                     }
                 };
                 Handler handler = new android.os.Handler();
@@ -49,6 +50,7 @@ public class Main4Activity extends AppCompatActivity {
                         Intent screen_play = new Intent(Main4Activity.this, Main3Activity.class);
                         screen_play.putExtra("heart",0);
                         startActivity(screen_play);
+                        finish();
                     }
                 };
                 Handler handler = new android.os.Handler();

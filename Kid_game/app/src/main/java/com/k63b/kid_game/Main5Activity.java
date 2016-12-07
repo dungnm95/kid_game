@@ -34,6 +34,7 @@ public class Main5Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent screen_back = new Intent(Main5Activity.this, MainActivity.class);
                 startActivity(screen_back);
+                finish();
             }
         });
         so_1 = (ImageView)findViewById(R.id.so_1);
@@ -47,7 +48,7 @@ public class Main5Activity extends AppCompatActivity {
         heart = i.getIntExtra("heart", 0);
         changeHeart(heart);
         Random r = new Random();
-        int n = r.nextInt(9); n++;
+        int n = r.nextInt(10); n++;
         //int n =1;
         switch (n){
             case 1:
@@ -444,6 +445,9 @@ public class Main5Activity extends AppCompatActivity {
                 }
             }
             else {
+                if (count == 0){
+                    noti_2.setImageResource(R.drawable.noti_0);
+                }
                 if (count == 1){
                     noti_2.setImageResource(R.drawable.noti_1);
                 }
